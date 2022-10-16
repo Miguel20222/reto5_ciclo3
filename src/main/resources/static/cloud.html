@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ajax Reto 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/cloud.js"></script>
+
+</head>
+<body>
+<div class="contenedorCloud">
+    <h1>CLOUD</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="client.html">Clientes</a></li>
+            <li><a href="message.html">Mensajes</a></li>
+        </ul>
+    </nav>
+    <div class="contenedorTabla">
+
+        <div class="contenedorFormulario">
+            <h3>Ingreso de datos</h3>
+            <div class="formulario">
+                <span>Id</span>
+                <input type="number" id="id" placeholder="id">
+                <span>Brand</span>
+                <input type="text" id="brand" placeholder="brand">
+                <span>Model</span>
+                <input type="number" id="model" placeholder="model">
+                <span>Category_ID</span>
+                <input type="number" id="category_id" placeholder="category_id">
+                <span>Name</span>
+                <input type="text" id="name" placeholder="name">
+            </div>
+            <div class="div-button">
+                <button onclick="crearCloud()">Crear</button>
+                <button onclick="modificarCloud()">Actualizar</button>
+                <button onclick="consultarCloud()"> Consultar</button>
+                <button onclick="traerCloud()">Traer</button>
+            </div>
+        </div>
+
+        <div class="contenedorMostrar">
+            <h3>Salida de datos</h3>
+            <div>
+                <p id="mostrarDataCloud"></p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

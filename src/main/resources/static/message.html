@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ajax Reto 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/message.js"></script>
+
+</head>
+<body>
+<div class="contenedorMessage">
+    <h1>MENSAJES</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cloud.html">Cloud</a></li>
+            <li><a href="client.html">Clientes</a></li>
+        </ul>
+    </nav>
+    <div class="contenedorTabla">
+
+        <div class="contenedorFormulario">
+            <h3>Ingreso de datos</h3>
+            <div class="formulario">
+                <span>Id</span>
+                <input type="number" id="idMessage" placeholder="id">
+                <span>MessageText</span>
+                <input type="text" id="messageText" placeholder="brand">
+            </div>
+            <div class="div-button">
+                <button onclick="crearMensaje()">Crear</button>
+                <button onclick="modificarMensaje()">Actualizar</button>
+                <button onclick="consultarMensajes()"> Consultar</button>
+                <button onclick="traerMensaje()">Traer</button>
+            </div>
+        </div>
+
+        <div class="contenedorMostrar">
+            <h3>Salida de datos</h3>
+            <div>
+                <p id="mostrarDataCloud"></p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+h1{
+    font-size: 75px;
+}
+h2{
+    font-size: 55px;
+}
+h3{
+    font-size: 35px;
+}
+.contenedorIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position:  center;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+}
+.menu li a{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 5px 0px;
+    transition: .5s;
+    z-index: 1;
+}
+.menu li a:hover{
+    color: blue;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+.contenedorCloud{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    color: aqua;
+    height: 100vh;
+    width: 100%;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 5px 5px 20px 5px;
+}
+.contenedorMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    color: aqua;
+    height: 100vh;
+    width: 100%;
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 5px 5px 20px 5px;
+}
+.contenedorClient{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    color: aqua;
+    height: 100vh;
+    width: 100%;
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position:  center;
+    padding: 5px 5px 20px 5px;
+}
+.contenedorTabla{
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    padding: 15px;
+
+}
+.contenedorFormulario{
+    border: 1px solid aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 8px;
+}
+.contenedorMostrar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid aqua;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+span{
+    text-align: end;
+    font-weight: bold;
+}
+input{
+    border: 1px solid aqua;
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 30px;
+    width: 90%;
+}
+button{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-color: aquamarine;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: aqua;
+    padding: 5px;
+    transition: transform .4s;
+}
+button:hover{
+    transform: scale(1.2);
+}
+table, th, td{
+    border: 1px solid aqua;
+    border-collapse:collapse;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    font-size: 15px;
+    text-align: center;
+}
